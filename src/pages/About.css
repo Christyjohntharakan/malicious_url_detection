@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto&display=swap');
+
+.about-container {
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #000428, #004e92, #00c6ff, #0072ff);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.about-content {
+  max-width: 1000px;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 198, 255, 0.5);
+}
+
+.about-title {
+  font-size: 3rem;
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 20px;
+  animation: fadeIn 1.5s ease;
+}
+
+.about-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  animation: slideUp 2s ease;
+}
+
+.features-heading {
+  font-size: 2rem;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: #00c6ff;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+.features-list li {
+  margin-bottom: 10px;
+  animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}

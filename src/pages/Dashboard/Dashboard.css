@@ -1,0 +1,126 @@
+/* Overall Dashboard */
+.dashboard {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #0e0e0e, #121212);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: rgba(0, 255, 170, 0.08);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #ccc;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #4CAF50;
+}
+
+/* Background Animations */
+.gradient-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 20% 20%, rgba(0, 255, 170, 0.1), transparent),
+              radial-gradient(circle at 80% 80%, rgba(0, 200, 255, 0.1), transparent);
+  z-index: 0;
+}
+
+/* Main Content */
+.dashboard-main {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex: 1;
+  padding: 100px 80px 60px 80px;
+  gap: 80px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Left Section */
+.dashboard-left {
+  flex: 1;
+  max-width: 600px;
+}
+
+.dashboard-left h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.dashboard-left p {
+  font-size: 20px;
+  margin-bottom: 25px;
+  color: #aaa;
+}
+
+.dashboard-left ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dashboard-left li {
+  font-size: 18px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+/* Right Section */
+.dashboard-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.url-analyzer {
+  background: rgba(0, 255, 170, 0.05);
+  border: 1px solid rgba(0, 255, 170, 0.2);
+  backdrop-filter: blur(14px);
+  border-radius: 22px;
+  padding: 50px 30px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow:
+    0 0 25px rgba(0, 255, 170, 0.2),
+    0 0 45px rgba(0, 255, 170, 0.15),
+    inset 0 0 30px rgba(0, 255, 170, 0.1);
+  transition: all 0.4s ease;
+}
+
+.url-analyzer:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 0 30px rgba(0, 255, 170, 0.4),
+    0 0 55px rgba(0, 255, 170, 0.25),
+    inset 0 0 35px rgba(0, 255, 170, 0.15);
+}
+
+/* Input */
+.input-group {
+  position: relative;
+  margin-bottom: 25px
