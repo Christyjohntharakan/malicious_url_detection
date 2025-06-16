@@ -2,9 +2,6 @@
 
 MALURL is a full-stack cybersecurity project that detects malicious URLs using machine learning and explains predictions using LIME. It provides a user-friendly interface to check if a URL is safe, risky, phishing, or adware-related.
 
-## 🌐 Live Demo
-[👉 Try MALURL Live](https://malurl.onrender.com) *(Replace if available)*
-
 ## 📌 Features
 - Detects malicious URLs using ML
 - Real-time risk scoring and threat classification
@@ -43,14 +40,6 @@ malurl/
 │ └── alexa.csv
 ├── README.md
 
-
-## 🧪 Sample URLs
-- ✅ https://www.google.com (Safe)
-- ⚠️ http://malicious-redirect.com (Phishing)
-- ⚠️ http://free-vbucks-now.tk (Adware)
-
-## 📸 Screenshots
-*(Add screenshots of your UI and model output here)*
 
 ## 📧 Contact
 Christy John Tharakan  
